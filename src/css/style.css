@@ -1,16 +1,60 @@
+* {
+    font-family: 'Microsoft Yahei';
+}
 
+a,
+a:hover {
+    text-decoration: none;
+    color: #745ec5;
+}
+ul,ul li {
+    list-style: none;
+}
 
+ul {
+    display: block;
+}
 
+.nav > li {
+    position: relative;
+    display: block;
+    text-align: center;
+}
 
+.nav > li.active {
+    background: rgb(238, 238, 238);
+    margin-right: 5px;
+}
 
+.nav > li > a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+}
 
+#header {
+    width: 100%;
+    height: 500px;
+    background: url("../images/bg_01.png") no-repeat center center;
+}
 
+#header .title-header {
+    color: #FFFFFF;
+    float: left;
+    margin-left: 10px;
+    margin-top: 8px;
+}
 
-
-
-
-
-
+.navbar-toggle {
+    background: #745ec5;
+    margin-top: 12px;
+}
+.navbar-toggle .icon-bar {
+    background: #FFFFFF;
+}
+#header .nav {
+    margin-top: 10px;
+}
 
 
 
