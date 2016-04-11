@@ -5,7 +5,6 @@
 a,
 a:hover {
     text-decoration: none;
-    color: #745ec5;
 }
 ul,ul li {
     list-style: none;
@@ -22,8 +21,12 @@ ul {
 }
 
 .nav > li.active {
-    background: rgb(238, 238, 238);
+    background: #745ec5;
     margin-right: 5px;
+}
+
+.nav > li:hover a{
+    color: #745ec5;
 }
 
 .nav > li > a {
@@ -36,6 +39,27 @@ ul {
     width: 100%;
     height: 500px;
     background: url("../images/bg_01.png") no-repeat center center;
+}
+
+#header ul.navbar-nav a {
+    color: #FFFFFF;
+}
+
+#header ul.navbar-nav a.purple {
+    color: #745ec5;
+}
+
+#header ul.navbar-nav a:hover {
+    color: #745ec5;
+}
+
+#header .shade_black {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, .3);
 }
 
 #header .title-header {
