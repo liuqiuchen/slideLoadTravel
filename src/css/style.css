@@ -1,5 +1,6 @@
 * {
     font-family: 'Microsoft Yahei';
+    font-size: 12px;
 }
 
 a,
@@ -39,6 +40,7 @@ ul {
     width: 100%;
     height: 500px;
     background: url("../images/bg_01.png") no-repeat center center;
+    position: relative;
 }
 
 #header ul.navbar-nav a {
@@ -79,6 +81,125 @@ ul {
 #header .nav {
     margin-top: 10px;
 }
+
+#header #carousel-example-generic {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    height: 500px;
+    text-align: center;
+}
+
+.fade {
+    opacity: 0;
+}
+@-khtml-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-o-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-ms-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-moz-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.fade.in {
+    -webkit-animation: fadeIn 1s linear;
+    -o-animation: fadeIn 1s linear;
+    animation: fadeIn 1s linear;
+}
+.carousel-inner .section {
+    margin-top: 150px;
+    color: #FFFFFF;
+}
+
+.carousel-inner .section h1.section_title {
+    font-size: 24px;
+    opacity: .9;
+}
+
+.carousel-inner .section p.section_contrib {
+    font-size: 16px;
+    line-height: 30px;
+    margin-top: 20px;
+    opacity: .8;
+}
+
+.carousel-inner .section div.section_btn {
+    width: 115px;
+    height: 40px;
+    line-height: 36px;
+    background: #FFFFFF;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    border: 2px solid #745ec5;
+    color: #745ec5;
+    margin: 8% auto 0 auto;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+@keyframes section_btn_hover {
+    
+}
+.carousel-inner .section div.section_btn.section_btn_hover {
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

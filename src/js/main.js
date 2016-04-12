@@ -6,7 +6,7 @@ app.controller('myCtrl', function ($scope) {
 		var _header = $('#header');
 		var _navBar = _header.find('ul.navbar-nav');
 
-		if($(window).scrollTop() >= _header.height()) {
+		if($(window).scrollTop() >= parseInt(_header.height() - 50)) {
 			$('#header-navbar').css({
 				'background': '#ffffff',
 				'border-bottom': '1px solid #ccc',
@@ -38,6 +38,46 @@ app.controller('myCtrl', function ($scope) {
 	$(window).scroll(function () {
 		$scope.scrollBarStyle();
 	});
+
+	//设置轮播器
+	$scope.textCarousel = function () {
+		//设置间隔
+		var intervalTime = 5000;
+		var intervalCount = 0;
+
+		$('#carousel-example-generic').carousel({
+			interval: intervalTime
+		}).on('slide.bs.carousel', function () {
+			var items = $('.carousel-inner').find('.item');
+			intervalCount++;
+
+			if(intervalCount == items.size()) intervalCount = 0;
+
+			items.eq(intervalCount).addClass('in').siblings().removeClass('in');
+
+		});
+
+		//小圆点切换
+		$('.carousel-indicators').find('li').click(function () {
+			var _this = $(this);
+			var _index = parseInt(_this.attr('data-slide-to'));
+			//console.log(_index);
+
+			var items = $('.carousel-inner').find('.item');
+			items.each(function (index, docEle) {
+				$(docEle).removeClass('in');
+			});
+			items.eq(_index).addClass('in');
+		});
+
+		/*$('#button').click(function () {
+			$('#carousel-example-generic').carousel('pause');
+		});*/
+
+	};
+
+	$scope.textCarousel();
+
 });
 
 
