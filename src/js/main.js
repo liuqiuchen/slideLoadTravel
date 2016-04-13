@@ -79,6 +79,7 @@ app.controller('myCtrl', function ($scope) {
 
 	$scope.textCarousel();
 
+
 });
 
 
