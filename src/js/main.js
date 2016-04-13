@@ -43,17 +43,16 @@ app.controller('myCtrl', function ($scope) {
 	$scope.textCarousel = function () {
 		//设置间隔
 		var intervalTime = 5000;
-		var intervalCount = 0;
+		var intervalIndex = 0;
 
 		$('#carousel-example-generic').carousel({
 			interval: intervalTime
-		}).on('slide.bs.carousel', function () {
+		}).on('slide.bs.carousel', function (item) {
+
 			var items = $('.carousel-inner').find('.item');
-			intervalCount++;
 
-			if(intervalCount == items.size()) intervalCount = 0;
-
-			items.eq(intervalCount).addClass('in').siblings().removeClass('in');
+			intervalIndex = $(item.relatedTarget).attr('data-index');
+			items.eq(intervalIndex).addClass('in').siblings().removeClass('in');
 
 		});
 
@@ -66,13 +65,15 @@ app.controller('myCtrl', function ($scope) {
 			var items = $('.carousel-inner').find('.item');
 			items.each(function (index, docEle) {
 				$(docEle).removeClass('in');
+				//$('#carousel-example-generic').unbind('slide.bs.carousel');
 			});
+
 			items.eq(_index).addClass('in');
 		});
 
-		/*$('#button').click(function () {
+		$('#button').click(function () {
 			$('#carousel-example-generic').carousel('pause');
-		});*/
+		});
 
 	};
 
