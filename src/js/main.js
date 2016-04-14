@@ -23,7 +23,7 @@ app.controller('myCtrl', function ($scope) {
 
 		}else {
 			$('#header-navbar').css({
-				'background': 'transparent',
+				'background': 'rgba(0, 0, 0, .2)',
 				'border-bottom': 'none',
 				'box-shadow': '0 0 0 transparent'
 			});
