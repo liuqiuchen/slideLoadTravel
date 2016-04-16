@@ -71,13 +71,33 @@ app.controller('myCtrl', function ($scope) {
 			items.eq(_index).addClass('in');
 		});
 
-		$('#button').click(function () {
+		/*$('#button').click(function () {
 			$('#carousel-example-generic').carousel('pause');
-		});
+		});*/
 
 	};
 
 	$scope.textCarousel();
+
+	//点击tabl页，淡入淡出切换
+	$scope.tabFade = function () {
+		var sectionl02 = $('.sectionl_02');
+		var pointLists = sectionl02.find('.point_list');
+		var targetLists = sectionl02.find('.target_list');
+
+		pointLists.find('li').each(function (index, docEle) {
+			$(docEle).on('click', function () {
+				var targetItems = targetLists.find('li');
+
+				targetItems.each(function (index, docEle) {
+					$(docEle).fadeOut('slow');
+				});
+				targetItems.eq(index).fadeIn('slow');
+			});
+		});
+	};
+
+	$scope.tabFade();
 
 
 });

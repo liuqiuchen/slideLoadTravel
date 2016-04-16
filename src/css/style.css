@@ -1,6 +1,8 @@
 * {
     font-family: 'Microsoft Yahei';
     font-size: 12px;
+    padding: 0;
+    margin: 0;
 }
 
 a,
@@ -290,6 +292,83 @@ ul {
     padding: 110px 0;
     background: #f5f5f5;
 }
+
+#main .sectionl_02 .pic {
+    cursor: pointer;
+}
+
+#main .sectionl_02 ul.point_list {
+    float: left;
+}
+
+#main .sectionl_02 ul.point_list li {
+    width: 90px;
+    height: 76px;
+    background: #aaaaaa;
+    text-align: center;
+    line-height: 76px;
+    margin-bottom: 1px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+#main .sectionl_02 ul.point_list li.point_active {
+    background: #745ec5;
+}
+
+#main .sectionl_02 ul.target_list {
+    float: right;
+    width: 75%;
+    position: relative;
+}
+
+#main .sectionl_02 ul.target_list li {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#main .sectionl_02 ul.target_list .target_item1 {
+    display: block;
+}
+
+#main .sectionl_02 ul.target_list .target_item2,
+#main .sectionl_02 ul.target_list .target_item3 {
+    display: none;
+}
+
+#main .sectionl_02 ul.target_list .target_item h1 {
+    font-size: 32px;
+    color: #745ec5;
+}
+
+#main .sectionl_02 ul.target_list .target_item p {
+    margin: 30px 0 0 0;
+    color: #a4a4a4;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
