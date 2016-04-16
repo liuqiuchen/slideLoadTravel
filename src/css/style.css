@@ -302,7 +302,7 @@ ul {
 }
 
 #main .sectionl_02 ul.point_list li {
-    width: 90px;
+    width: 70px;
     height: 76px;
     background: #aaaaaa;
     text-align: center;
@@ -340,6 +340,8 @@ ul {
 #main .sectionl_02 ul.target_list .target_item h1 {
     font-size: 32px;
     color: #745ec5;
+    padding: 0;
+    margin: 0;
 }
 
 #main .sectionl_02 ul.target_list .target_item p {
