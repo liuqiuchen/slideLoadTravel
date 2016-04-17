@@ -310,6 +310,15 @@ ul {
     margin-bottom: 1px;
     color: #FFFFFF;
     cursor: pointer;
+    -webkit-transition: all .5s linear;
+    -moz-transition: all .5s linear;
+    -ms-transition: all .5s linear;
+    -o-transition: all .5s linear;
+    transition: all .5s linear;
+}
+
+#main .sectionl_02 ul.point_list li:hover {
+    background: #745ec5;
 }
 
 #main .sectionl_02 ul.point_list li.point_active {
@@ -345,14 +354,42 @@ ul {
 }
 
 #main .sectionl_02 ul.target_list .target_item p {
-    margin: 30px 0 0 0;
+    margin: 5% 0;
     color: #a4a4a4;
 }
 
+#main .sectionl_02 ul.target_list .tar_details_btn {
+    width: 125px;
+    height: 40px;
+    line-height: 36px;
+    text-align: center;
+    border: 2px solid #745ec5;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
 
+#main .sectionl_02 ul.target_list .tar_details_btn a{
+    width: 121px;
+    height: 36px;
+    background: #745ec5;
+    color: #FFFFFF;
+    display: inline-block;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -ms-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+}
 
-
-
+#main .sectionl_02 ul.target_list .tar_details_btn a:hover {
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
 
 
 

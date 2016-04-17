@@ -86,18 +86,46 @@ app.controller('myCtrl', function ($scope) {
 		var targetLists = sectionl02.find('.target_list');
 
 		pointLists.find('li').each(function (index, docEle) {
+
 			$(docEle).on('click', function () {
 				var targetItems = targetLists.find('li');
+				var _this = $(this);
 
 				targetItems.each(function (index, docEle) {
 					$(docEle).fadeOut('slow');
 				});
 				targetItems.eq(index).fadeIn('slow');
+
+				pointLists.find('li').each(function (index, docEle) {
+					$(docEle).removeClass('point_active');
+				});
+				_this.addClass('point_active');
 			});
 		});
 	};
 
 	$scope.tabFade();
+
+	//改变.tar_details_btn的样式
+	$scope.tardbtnStyle = function () {
+		var queryStringObj = '#main .sectionl_02 ul.target_list .tar_details_btn a';
+		var changeColor_p = '#745ec5';
+		var changeColor_w = '#ffffff';
+
+		$(queryStringObj).mouseover(function () {
+			$(this).css({
+				'color': changeColor_p,
+				'background': changeColor_w
+			});
+		}).mouseout(function () {
+			$(this).css({
+				'color': changeColor_w,
+				'background': changeColor_p
+			});
+		});
+	};
+
+	$scope.tardbtnStyle();
 
 
 });
