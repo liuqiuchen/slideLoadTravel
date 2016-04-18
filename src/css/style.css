@@ -391,17 +391,46 @@ ul {
     border-radius: 5px;
 }
 
+#main .sectionl_03 {
+    width: 100%;
+    padding: 80px 0 50px 0;
+    border-bottom: 1px solid lightcoral;
+    background: #FFFFFF;
+}
 
+#main .sectionl_03 h1 {
+    text-align: center;
+    font-size: 36px;
+    color: #745ec5;
+    margin-bottom: 60px;
+}
 
+#main .sectionl_03 .directive_icon {
+    width: 102px;
+    height: 102px;
+    background: #cccccc;
+}
 
+#main .sectionl_03 .introduce {
+    width: 70%;
+}
 
+#main .sectionl_03 .introduce h2 {
+    font-size: 16px;
+    margin: 10px 0 0 0;
+    padding: 0;
+}
 
+#main .sectionl_03 .introduce p {
+    color: #ababab;
+    padding: 20px 0;
+}
 
-
-
-
-
-
+#main .sectionl_03 li {
+    width: 100%;
+    height: 115px;
+    margin-bottom: 50px;
+}
 
 
 
