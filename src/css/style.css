@@ -404,15 +404,64 @@ ul {
     color: #745ec5;
     margin-bottom: 60px;
 }
-
 #main .sectionl_03 .directive_icon {
+    /*width: 102px;
+    height: 102px;*/
     width: 102px;
     height: 102px;
-    background: #cccccc;
+    border: 2px solid #FFFFFF;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+}
+
+#main .sectionl_03 .directive_icon .icon_response {
+    width: 90px;
+    height: 90px;
+    margin: 4px;
+    background: #e2dfdf;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+}
+
+#main .sectionl_03 .directive_icon:hover {
+    width: 102px;
+    height: 102px;
+    border: 2px solid #555555;
+}
+
+#main .sectionl_03 .directive_icon:hover .icon_response {
+    background: #999999;
+}
+
+#main .sectionl_03 .directive_icon:hover .icon_response i {
+    color: #FFFFFF;
+}
+
+#main .sectionl_03 .directive_icon .icon_response i {
+    color: #999999;
+    line-height: 94px;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
 }
 
 #main .sectionl_03 .introduce {
-    width: 70%;
+    height: 108px;
 }
 
 #main .sectionl_03 .introduce h2 {
@@ -424,11 +473,12 @@ ul {
 #main .sectionl_03 .introduce p {
     color: #ababab;
     padding: 20px 0;
+    cursor: pointer;
 }
 
 #main .sectionl_03 li {
     width: 100%;
-    height: 115px;
+    height: auto;
     margin-bottom: 50px;
 }
 
