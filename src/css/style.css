@@ -482,6 +482,85 @@ ul {
     margin-bottom: 50px;
 }
 
+/*sectionl_04 开始*/
+#main .sectionl_04 {
+    width: 100%;
+    height: 500px;
+    background: url("../images/bg_02.png") no-repeat center center;
+}
+
+#main .sectionl_04 h1 {
+    color: #FFFFFF;
+    font-size: 40px;
+    text-align: center;
+    margin: 70px 0 60px 0;
+}
+
+#main .sectionl_04 .price_block {
+    width: 288px;
+    height: 254px;
+    margin: auto;
+    text-align: center;
+}
+
+#main .sectionl_04 .price_block .block_bg {
+    width: 288px;
+    height: 254px;
+    background: #000000;
+    opacity: .5;
+    filter: alpha(opacity=50);
+    position: absolute;
+}
+
+#main .sectionl_04 .price_block  .block_container {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+#main .sectionl_04 .price_block h2 {
+    font-size: 26px;
+    color: #eaeaea;
+    padding: 40px 0;
+    margin: 0;
+}
+
+#main .sectionl_04 .price_block p.price_eve {
+    font-size: 24px;
+    color: #eaeaea;
+    margin: 0;
+    padding: 0;
+}
+
+#main .sectionl_04 .price_block div.read_more_w {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
