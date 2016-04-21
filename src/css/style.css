@@ -538,9 +538,17 @@ ul {
 
 #main .sectionl_04 .price_block div.read_more_w {}
 
+@media screen and (max-width: 992px) {
+    #main .sectionl_04 .col3 {
+        display: none;
+    }
+}
 
-
-
+@media screen and (max-width: 750px) {
+    #main .sectionl_04 .col2 {
+        display: none;
+    }
+}
 
 
 
