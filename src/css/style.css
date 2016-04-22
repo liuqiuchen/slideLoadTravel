@@ -361,17 +361,19 @@ ul {
 #main .sectionl_02 ul.target_list .tar_details_btn {
     width: 125px;
     height: 40px;
-    line-height: 36px;
+    line-height: 40px;
     text-align: center;
     border: 2px solid #745ec5;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
+    position: relative;
 }
 
 #main .sectionl_02 ul.target_list .tar_details_btn a{
     width: 121px;
     height: 36px;
+    line-height: 36px;
     background: #745ec5;
     color: #FFFFFF;
     display: inline-block;
@@ -380,6 +382,12 @@ ul {
     -ms-transition: all .2s linear;
     -o-transition: all .2s linear;
     transition: all .2s linear;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
 }
 
 #main .sectionl_02 ul.target_list .tar_details_btn a:hover {
@@ -510,6 +518,11 @@ ul {
     opacity: .5;
     filter: alpha(opacity=50);
     position: absolute;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -ms-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
 }
 
 #main .sectionl_04 .price_block  .block_container {
@@ -523,20 +536,86 @@ ul {
 }
 
 #main .sectionl_04 .price_block h2 {
-    font-size: 26px;
+    font-size: 24px;
     color: #eaeaea;
-    padding: 40px 0;
+    padding: 35px 0;
     margin: 0;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -ms-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
 }
 
 #main .sectionl_04 .price_block p.price_eve {
-    font-size: 24px;
+    font-size: 20px;
     color: #eaeaea;
     margin: 0;
     padding: 0;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -ms-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
 }
 
-#main .sectionl_04 .price_block div.read_more_w {}
+#main .sectionl_04 .price_block .read_more_w {
+    width: 128px;
+    height: 44px;
+    border: 2px solid #FFFFFF;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    margin: 35px auto;
+    cursor: pointer;
+    position: relative;
+}
+
+#main .sectionl_04 .price_block .read_more_w .read_more {
+    width: 124px;
+    height: 40px;
+    line-height: 40px;
+    background: #FFFFFF;
+    font-size: 14px;
+    color: #745ec5;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -ms-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+}
+
+#main .sectionl_04 .price_block .read_more_w:hover .read_more {
+    width: 90px;
+    height: 34px;
+    line-height: 34px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#main .sectionl_04 .price_block:hover .block_bg {
+    background: #745ec5;
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+#main .sectionl_04 .price_block:hover h2 {
+    font-size: 26px;
+}
+
+#main .sectionl_04 .price_block:hover p.price_eve {
+    font-size: 24px;
+}
 
 @media screen and (max-width: 992px) {
     #main .sectionl_04 .col3 {
