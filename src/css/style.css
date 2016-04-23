@@ -175,7 +175,7 @@ ul {
 .carousel-inner .section div.section_btn {
     width: 115px;
     height: 40px;
-    line-height: 36px;
+    line-height: 40px;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
     border-radius: 8px;
@@ -184,6 +184,7 @@ ul {
     margin: 8% auto 0 auto;
     letter-spacing: 1px;
     cursor: pointer;
+    position: relative;
 }
 .carousel-inner .section div.section_btn a,
 .carousel-inner .section div.section_btn a:hover {
@@ -193,6 +194,7 @@ ul {
     display: inline-block;
     width: 111px;
     height: 36px;
+    line-height: 36px;
     background: #FFFFFF;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
@@ -202,6 +204,12 @@ ul {
     -ms-transition: all .2s linear;
     -o-transition: all .2s linear;
     transition: all .2s linear;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
 }
 
 .carousel-inner .section div.section_btn a:hover {
@@ -629,7 +637,17 @@ ul {
     }
 }
 
-
+#footer {
+    width: 80%;
+    height: 50px;
+    line-height: 46px;
+    border-top: 2px solid #cccccc;
+    border-bottom: 2px solid #cccccc;
+    margin: 100px auto;
+    text-align: center;
+    font-size: 12px;
+    color: #333333;
+}
 
 
 
